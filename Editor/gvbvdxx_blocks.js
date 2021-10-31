@@ -1065,7 +1065,7 @@ Blockly.JavaScript['did_press_key_'] = function(block) {
 Blockly.JavaScript['calculate_note_as_play_rate'] = function(block) {
   var value_note = Blockly.JavaScript.valueToCode(block, 'note', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = '2 ** ((value_note - 60) / 12)';
+  var code = '2 ** (( ' + value_note + ' - 60) / 12)';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
