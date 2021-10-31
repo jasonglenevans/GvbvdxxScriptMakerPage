@@ -853,13 +853,13 @@ Blockly.defineBlocksWithJsonArray([
   "tooltip": "",
   "helpUrl": ""
 },
- {
+{
   "type": "calculate_note_as_play_rate",
   "message0": "calculate  %1 as a playback rate",
   "args0": [
     {
       "type": "input_value",
-      "name": "note",
+      "name": "convert note",
       "check": "Number"
     }
   ],
@@ -1063,13 +1063,12 @@ Blockly.JavaScript['did_press_key_'] = function(block) {
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
 Blockly.JavaScript['calculate_note_as_play_rate'] = function(block) {
-  var value_note = Blockly.JavaScript.valueToCode(block, 'note', Blockly.JavaScript.ORDER_ATOMIC);
+  var value_convert_note = Blockly.JavaScript.valueToCode(block, 'convert note', Blockly.JavaScript.ORDER_ATOMIC);
   // TODO: Assemble JavaScript into code variable.
-  var code = '2 ** (( (' + value_note + ') - (60)) / 12)';
+  var code = '2 ** (((' + value_convert_note + ') - 60) / 12)';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
-
 
 
 
