@@ -852,6 +852,21 @@ Blockly.defineBlocksWithJsonArray([
   "colour": 0,
   "tooltip": "",
   "helpUrl": ""
+},
+ {
+  "type": "calculate_note_as_play_rate",
+  "message0": "calculate  %1 as a playback rate",
+  "args0": [
+    {
+      "type": "input_value",
+      "name": "note",
+      "check": "Number"
+    }
+  ],
+  "output": "Number",
+  "colour": 230,
+  "tooltip": "",
+  "helpUrl": ""
 }
 ]); //end the code for the JSON
 Blockly.JavaScript['openlink'] = function(block) {
@@ -1044,6 +1059,13 @@ Blockly.JavaScript['did_press_key_'] = function(block) {
   var dropdown_key = block.getFieldValue('key');
   // TODO: Assemble JavaScript into code variable.
   var code = 'iskeypressed("' + dropdown_key + '")';
+  // TODO: Change ORDER_NONE to the correct strength.
+  return [code, Blockly.JavaScript.ORDER_NONE];
+};
+Blockly.JavaScript['calculate_note_as_play_rate'] = function(block) {
+  var value_note = Blockly.JavaScript.valueToCode(block, 'note', Blockly.JavaScript.ORDER_ATOMIC);
+  // TODO: Assemble JavaScript into code variable.
+  var code = '2 ** ((value_note - 60) / 12)';
   // TODO: Change ORDER_NONE to the correct strength.
   return [code, Blockly.JavaScript.ORDER_NONE];
 };
