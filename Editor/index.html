@@ -354,7 +354,7 @@ Blockly.Xml.domToWorkspace(xml, workspace);
     xml = Blockly.Xml.workspaceToDom(workspace);
    var xml_text = Blockly.Xml.domToText(xml);
           navigator.clipboard.writeText(xml_text)
-        window.alert ("your save code is coped on to your clip board")
+        window.alert ("your save code is copied on to your clipboard")
     }
         if (!('fetch' in window)) {
   console.log('Fetch API not found, try including the polyfill');
