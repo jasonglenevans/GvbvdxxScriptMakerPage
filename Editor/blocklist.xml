@@ -1,0 +1,54 @@
+    <category name="Blocks">
+      <category name="Controls">
+        <block type="controls_if"></block>
+        <block type="controls_repeat_ext"></block>
+        <block type="controls_ifelse"></block>
+      </category>
+      <category name="Logic">
+           <block type="logic_boolean"></block>
+           <block type="logic_compare"></block>
+           <block type="logic_negate"></block>
+           <block type="logic_null"></block>
+           <block type="logic_ternary"></block>
+      </category>
+      <category name="Math">
+        <block type="math_number"></block>
+        <block type="math_arithmetic"></block>
+        <block type="math_single"></block>
+        <block type="math_trig"></block>
+        <block type="math_constant"></block>
+        <block type="math_number_property"></block>
+        <block type="math_change"></block>
+        <block type="math_round"></block>
+        <block type="math_on_list"></block>
+        <block type="math_modulo"></block>
+        <block type="math_constrain"></block>
+        <block type="math_random_int"></block>
+        <block type="math_atan2"></block>
+      </category>
+      <category name="Text">
+          <block type="text"></block>
+          <block type="text_print"></block>
+          <block type="text_multiline"></block>
+          <block type="text_join"></block>
+          <block type="text_append"></block>
+          <block type="text_length"></block>
+          <block type="text_isEmpty"></block>
+          <block type="text_indexOf"></block>
+          <block type="text_charAt"></block>
+      </category>
+      <category name="Variables/Lists">
+            <block type="variables_get"></block>
+            <block type="variables_set"></block>
+      </category>
+      <category name="Colour">
+          <block type="colour_picker"></block>
+          <block type="colour_random"></block>
+          <block type="colour_rgb"></block>
+          <block type="colour_blend"></block>
+      </category>
+      <category name="Other">
+      
+      </category>
+    </category>
+    </category>
