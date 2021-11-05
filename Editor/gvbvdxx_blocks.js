@@ -823,26 +823,6 @@ Blockly.defineBlocksWithJsonArray([
         [
           "z",
           "z"
-        ],
-        [
-          "z",
-          "z"
-        ],
-        [
-          "y",
-          "y"
-        ],
-        [
-          "z",
-          "z"
-        ],
-        [
-          "z",
-          "z"
-        ],
-        [
-          "z",
-          "z"
         ]
       ]
     }
