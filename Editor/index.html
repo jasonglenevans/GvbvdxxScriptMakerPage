@@ -31,18 +31,24 @@
     
     <h1 style="font-size: 50px; height: 100px; width: 700px; font-family:Arial;">Gvbvdxx's Script Maker</h1>
     <br>
-    <div name="app" style="background-color:#ffff; margin-top:0; margin-right:auto; margin-bottom:0; margin-left:auto;">
+    <div name="app" style="background-color:#ffff; margin-top:0; margin-right:auto; margin-bottom:0; margin-left:auto;" class="appspace">
         
         
         
         
-    <div class="row">
-        <div class="column">
-    <div id="blocklyArea"  style="height: 720px; width: 940px; border:0;">
-        <div id="blocklyDiv" style="position: absolute border:0;"></div>
+		    <table>
+    <tr>
+      <td>
+        <h1>
+      </td>
+    </tr>
+    <tr>
+	 <div class="column">
+    <div id="blocklyArea"  style="height: 720px; width:1300px; border:0;" class="blocklyResize">
+        <div id="blocklyDiv" style="position: absolute border:0;" class="blocklyDiv"></div>
     </div>
-        </div>
-        <div class="bottom">
+	 </div>
+	         <div class="bottom">
             <button onclick="run('t')" style="height: 30px; width: 80px; border:0;">Run</button>
     <button onclick="copy()" style="height: 30px; width: 80px; border:0; padding: .5em;">Copy</button>
     <button onclick="saveblock()" style="height: 30px; width: 80px; border:0;">Save</button>
@@ -56,6 +62,8 @@
         <div class="column">
                     <textarea style="height: 600px; width: 500px; border:0; resize: none; " id="p1" enabled="false" cols="infinity" rows="" textmode="multiline" readonly ></textarea>
         </div>
+    </tr>
+  </table>
         
         
         
@@ -75,6 +83,22 @@
     content: "";
     clear: both;
     background-color:#ffff;
+    }
+	 .appspace {
+  position: absolute;
+	 }
+	 .blocklyResize {
+
+	 
+	 }
+	     table {
+      height: 100%;
+      width: 100%;
+    }
+    #blocklyArea {
+      height: 99%;
+      background: #fc9;
+      text-align: center;
     }
     </style>
     </div>
