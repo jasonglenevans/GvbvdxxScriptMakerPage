@@ -443,7 +443,7 @@ Blockly.defineBlocksWithJsonArray([
           ],
         [
             "Speed",
-            "playbackrate"
+            "playbackRate"
         ]
       ]
     }
