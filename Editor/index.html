@@ -277,7 +277,7 @@
           length: 3,
           colour: '#ccc',
           snap: false},
-     trashcan: true}
+     trashcan: false}
                                 );
   var onresize = function(e) {
     // Compute the absolute coordinates and dimensions of blocklyArea.
@@ -346,12 +346,14 @@ var xml_text = Blockly.Xml.domToText(xml);
     }
     function loadblock() {
         var codename = window.prompt("name of code")
+	workspace.clear();
           blocks = (localStorage.getItem("blockly-saved-blocks-" + codename));
         var xml = Blockly.Xml.textToDom(blocks);
 Blockly.Xml.domToWorkspace(xml, workspace);
     }
     function loadblockcode() {
-                var savecode = window.prompt("paste code here")
+        var savecode = window.prompt("paste code here")
+        workspace.clear();
         var xml = Blockly.Xml.textToDom(savecode);
         Blockly.Xml.domToWorkspace(xml, workspace);
     }
