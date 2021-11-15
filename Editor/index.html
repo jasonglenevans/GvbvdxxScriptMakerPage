@@ -423,13 +423,10 @@ Blockly.Xml.domToWorkspace(xml, workspace);
    <script src="costom_category.js"></script>
    <script src="keypressengine/key.js"></script>
 <script>
-    window.addEventListener("beforeunload", function(event) {
-    
-        var choice = window.confirm ("you have unsaved changes, so do want to close?")
-       if(choice){
-         window.close()
-       }
-    
-    
-    });
+window.addEventListener('beforeunload', function (e) {
+  // Cancel the event
+  e.preventDefault();
+  // Chrome requires returnValue to be set
+  e.returnValue = '';
+});
 </script>
