@@ -1053,5 +1053,5 @@ Blockly.JavaScript['calculate_note_as_play_rate'] = function(block) {
 
 
 workspace.registerButtonCallback('addAddon', function(button) {
-loadaddon(Blockly.prompt('type in URL for addon' , 'https://'))
+loadaddon(window.prompt('type in URL for addon' , 'https://'))
 });
